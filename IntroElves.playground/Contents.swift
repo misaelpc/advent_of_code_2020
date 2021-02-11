@@ -13,11 +13,7 @@ func expensesSearch() -> Int {
         return expenses[start] * expenses[index + 1]
       }
     }
-    
-    if continueSearch == false {
-      break
-    }
-                    
+                        
     for index in stride(from: sizeZeroBased - 1, through: 0, by: -1) {
       if expenses[end] + expenses[index] == 2020 {
         continueSearch = false
